@@ -1,5 +1,5 @@
 {
-  "name": "express-boilerplate-v2",
+  "name": "express-boilerplate-mongo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

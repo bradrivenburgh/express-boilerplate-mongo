@@ -1,4 +1,4 @@
-# Express Boilerplate Version 2!
+# Express Boilerplate Monga!
 
 This is a boilerplate project used for starting new projects!
 

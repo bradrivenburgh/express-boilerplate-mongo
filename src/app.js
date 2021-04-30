@@ -5,14 +5,15 @@ const cors = require('cors');
 const helmet = require('helmet');
 const { morganOptions } = require('./config');
 const errorHandler = require('./utils/errorHandler');
+const exampleRouter = require('./routes/exampleRoute');
 
 const app = express();
 
 app.use(morgan(morganOptions));
 app.use(cors());
 app.use(helmet());
-// app.use(express.json()); // Enable if using non-GET endpoints
-// Routers go below here
+app.use(express.json());
+app.use('/example', exampleRouter)
 app.use(errorHandler);
 
 app.get('/', (req, res) => {
